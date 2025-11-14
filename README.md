@@ -41,44 +41,57 @@ sales-etl-pipeline/ ├── data/ # Datos raw y procesados ├── src/ # C�
 ```bash
 git clone https://github.com/tu-usuario/sales-etl-pipeline.git
 cd sales-etl-pipeline
+```
 2.	Crear entorno virtual:
+```bash
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
+```
 3.	Instalar dependencias:
+```bash
 pip install -r requirements.txt
+```
 4.	Configurar variables de entorno:
 cp .env.example .env
 # Editar .env con tus credenciales
-💻 Uso
-Ejecutar pipeline completo:
+## 💻 Uso
+### Ejecutar pipeline completo:
 python src/pipeline.py
-Ejecutar etapas individuales:
+
+### Ejecutar etapas individuales:
 python src/extract.py
 python src/transform.py
 python src/load.py
-🧪 Testing
+## 🧪 Testing
 pytest tests/
-📊 Resultados
+## 📊 Resultados
 •	Procesamiento de +10,000 registros/minuto
 •	Reducción de 30% en datos duplicados
 •	Automatización completa del proceso diario
-🔄 Pipeline Flow
+## 🔄 Pipeline Flow
 CSV Files → Extract → Validate → Transform → Load → PostgreSQL
                                                    ↓
                                               Data Quality
                                                  Report
-📈 Próximas Mejoras
+## 📈 Próximas Mejoras
 •	[ ] Integración con Airflow para scheduling
 •	[ ] Dockerización del proyecto
 •	[ ] Dashboard de monitoreo
 •	[ ] Integración con AWS S3
-📝 Licencia
+
+## 📝 Licencia
 Este proyecto está bajo la Licencia MIT - ver LICENSE para detalles.
-👤 Autor
-Tu Nombre
-•	LinkedIn: tu-perfil
-•	Portfolio: tu-portfolio.lovable.app
-•	Email: tu.email@example.com
-🙏 Agradecimientos
-•	Comunidad de Python
-•	Documentación de Pandas
+
+## 👤 Autor
+
+Santiago Izurieta
+
+LinkedIn: https://ec.linkedin.com/in/santiago-izurieta-844324125
+
+Portfolio: https://my-data-engineer-folio.lovable.app/
+
+## 🙏 Agradecimientos
+
+- Comunidad de Python y Polars
+- Documentación de Kaggle y Seaborn
+- Google Colab para ejecución reproducible
